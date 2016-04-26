@@ -1,0 +1,10 @@
+{
+  "name": "pook",
+  "version": "0.0.0",
+  "authors": [
+    "Nicolas Guinet <nguinet.pro@gmail.com>"
+  ],
+  "description": "Users queue booking system",
+  "main": "pook.htm",
+  "license": "MIT"
+}

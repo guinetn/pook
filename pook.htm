@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pookApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Users queue booking system</title>
+
+	<script src="dist/jquery.min.js"></script>
+	<script src="dist/angular.min.js"></script>
+	<script src="dist/ui-bootstrap-tpls-0.14.0.js"></script>
+	<script src="dist/angular-resource.min.js"></script>
+
+	<script src="js/controllers.js"></script>
+
+	<link rel="stylesheet" href="css/pook.css">
+	<link rel="stylesheet" href="css/angular-ui.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+</head>
+<body ng-controller="UsersCtrl">
+	<h1>Users queue booking system</h1>
+	<h5>With 50 sec. timer</h5>
+	<div ng-mouseenter="showUsers = true" ng-mouseleave="showUsers = false" class="alertcontainer">
+
+	  <script type="text/ng-template" id="user.html">
+	    <div class="alert" role="alert" style="background-color:#312E2E; color:white; padding: 8px 5px 0 5px; margin: 0 20px 0 0">
+	   	<button type="button" class="close" ng-click="close({$event: $event})" style="position: absolute;  padding: 0 67px; color: #C00000">
+	        <span aria-hidden="true">&cross;</span>	       
+   		 </button>
+          <div ng-transclude></div>	     
+	    </div>
+	  </script> 
+
+	   <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}"	class='rel useralert'  
+	   template-url="user.html"
+	   close="closeAlert($index)">	   	
+	    	  	
+	  		<div class="useralert"><img class='userimg' src='img/users/{{alert.id}}.jpg'></div>
+	  		<div class='usernamealert'>{{alert.msg}}</div>
+	    	<uib-progressbar ng-show="$index==0" id="progressbaruser" class="progress-striped active" value="progressValue" type="alert.type"></uib-progressbar>	    	
+	  		<div class='nextimg' ng-show="$index < alerts.length-1">&rtrif;</div> 
+	   </uib-alert>
+
+  	   <uib-alert ng-show="alerts.length<1"  ng-mouseenter="showUsers = true" ng-mouseleave="showUsers = false">CLICK TO CHOOSE</uib-alert>
+	</div>
+
+ 	<div class="usersChoice1" ng-show="showUsers" ng-mouseenter="showUsers = true" ng-mouseleave="showUsers = false">  
+ 	  <div class="usersChoice2">
+	    <div ng-repeat="user in users" class="userChoiceBox"> 	      		
+	      	<button type="button" class='btn btn-primary btn-user' ng-click='addAlert(user.username, user.id, $index)'>
+	      	<div class="rel"><img src='img/users/{{user.id}}.jpg'><div class='username'>{{user.username}}</div></div>
+	      	</button>  
+	  	</div>
+	  </div>
+	</div> 
+		
+</body>
+</html>
+

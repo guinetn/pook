@@ -1,0 +1,13 @@
+{
+	"users":[
+    {"id": 1, "username": "Paul" },
+    {"id": 2, "username": "Stéphane" },
+    {"id": 3, "username": "Christophe" },
+    {"id": 4, "username": "Chloe"},
+    {"id": 5, "username": "Caroline" },
+    {"id": 6, "username": "Nicolas"},
+    {"id": 7, "username": "Romain"},
+    {"id": 8, "username": "Ludo"},
+    {"id": 9, "username": "John"}
+]
+}
