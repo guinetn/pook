@@ -1,5 +1,6 @@
 .fleft { float: left; }
-.rel { position:relative; }
+.rel   { position:relative; }
+#main   { margin: 10px; }
 
 .usersChoice1 { margin-top: -60px;z-index: 20;  }
 .usersChoice2 { display: flex; flex-direction:row; flex-wrap: wrap; justify-content: center; z-index: 21; background:#312E2E; border-radius:8px; position: relative;  padding: 6px;}
