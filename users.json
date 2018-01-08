@@ -1,5 +1,5 @@
 {
-	"users":[
+    "users":[
     {"id": 1, "username": "Paul" },
     {"id": 2, "username": "Stéphane" },
     {"id": 3, "username": "Christophe" },
