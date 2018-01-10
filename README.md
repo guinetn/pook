@@ -1,6 +1,6 @@
 #Pook - Platform Booking
-Simple queue system displayed on a web page.  
-Allow to share a computer by booking order.
+An simple Angular app to view user's order in queue.  
+Allows for example to share a computer by booking in queue in one click.
 
 ![pook](doc/pook01.jpg)
 
