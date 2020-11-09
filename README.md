@@ -1,8 +1,15 @@
-#Pook - Platform Booking
-An simple Angular app to view user's order in queue.  
-Allows for example to share a computer by booking in queue in one click.
+# Pook - Platform Booking
+
+A FIFO kind of booking system to set an order on who is allowed to use a limited resource.  
+One click user's regitering in the queue  
+View user's in the order they arrive
+Current user's icon show a hourglass for 50 sec.  
+Very simple Angular's app  
 
 ![pook](doc/pook01.jpg)
 
-Just run pook.htm  
-Just click to add a user in the queue for 50 sec.
+# How to use
+
+- http://guinetn.github.io/pook/pook.html  
+- run pook.html  
+- Just click to add a user in the queue for 50 sec  
