@@ -2,9 +2,9 @@
 
 A FIFO kind of booking system to set an order on who is allowed to use a limited resource.  
 
-- One click user's regitering in the queue  
+- One click to be registered in the queue  
 - View user's in the order they arrive
-- Current user's icon show a hourglass for 50 sec.  
+- The current active user's icon shows a hourglass for 50 sec.  
 - Very simple Angular's app  
 
 ![pook](doc/pook01.jpg)
