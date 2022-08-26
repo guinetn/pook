@@ -1,6 +1,7 @@
-# Pook - Platform Booking
+# Pook - Platform Resource Booking
 
-A FIFO kind of booking system to set an order on who is allowed to use a limited resource.  
+FIFO resource booking system. Visually set the order in which people can access a single access resource. First in, first allowed!
+It queue users in order they make a request for a single user available resource. Then a 50 seconds timer allow the user to do things before to disapear.
 
 - One click to be registered in the queue  
 - View user's in the order they arrive
